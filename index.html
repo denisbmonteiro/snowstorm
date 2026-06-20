@@ -3,31 +3,43 @@
 <head>
 	<title>Snowstorm!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script type="text/javascript" src="content/snowstorm.js"></script>	
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="content/rabbit-lyrics.css" />
-	<script type="text/javascript" src="content/rabbit-lyrics.js"></script>	
+	<script type="text/javascript" src="content/snowstorm.js"></script>	
+	<script type="text/javascript" src="content/rabbit-lyrics.js"></script>
     <style type="text/css">
-        body {
-			background-color: #000000;
-			background-image: url('content/mizore.jpg');
-			background-size: cover;
+		* {
 			padding: 0;
 			margin: 0;
 		}
-		#lyrics {
-			font-size: 40px;
-			font-family: Arial;
-			text-align: center;
-			margin-top: 45%;
-			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        body {
+			height: 100vh;
+			overflow: hidden;
+			background-color: #000000;
+			background-image: url('content/mizore.jpg');
+			background-size: cover;
+			background-position: center;
 		}
 		audio {
 			width: 100%;
 		}
+		.lyrics {
+			display: flex;
+			position: absolute;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			min-height: 15%;
+			bottom: 15px;
+			font-size: 40px;
+			font-family: Arial;
+			text-align: center;
+			text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+		}
     </style>
 </head>
 <body>
-	<audio id="audio1" controls="controls" loop="loop" autoplay="autoplay">
+	<audio id="audio" controls loop autoplay>
 		<source src="content/snowstorm.opus" type="audio/ogg">
         <p>ERROR: Maybe you need a better browser, like Firefox.</p>
 		<script>
@@ -36,7 +48,7 @@
 		</script>
     </audio>
 		
-	<div id="lyrics" class="rabbit-lyrics rabbit-lyrics-mini rabbit-lyrics-enabled" data-media="#audio1" data-view-mode="mini">
+	<div class="lyrics rabbit-lyrics rabbit-lyrics-mini rabbit-lyrics-enabled" data-media="#audio" data-view-mode="mini">
 		[00:00.00]Kugimiya Rie - Snowstorm
 		[00:23.29]koori no kabe ga ima wa
 		[00:28.00]atakaku hodokete iku
