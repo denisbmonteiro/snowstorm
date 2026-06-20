@@ -14,6 +14,7 @@ Uma página simples com efeito de neve, reprodução de áudio e sincronização
 - Reprodutor de áudio com controles e reprodução automática (`snowstorm.opus`).
 - Sincronização de letras com Rabbit Lyrics (implementado em `rabbit-lyrics.js`).
 - Estilos para as letras em `rabbit-lyrics.css`.
+- Estilos gerais da página em `style.css`.
 
 **Como executar**
 1. Clone ou baixe este repositório.
@@ -35,6 +36,7 @@ Comportamento padrão:
 - [content/rabbit-lyrics.js](content/rabbit-lyrics.js) — lógica de sincronização de letras (Rabbit Lyrics).
 - [content/snowstorm.js](content/snowstorm.js) — script do efeito de neve.
 - [content/snowstorm.opus](content/snowstorm.opus) — arquivo de áudio usado pela página.
+- [style.css](style.css) — estilos gerais da página.
 
 **Licença / Notas**
 - O `snowstorm.js` inclui cabeçalho indicando licença BSD.
