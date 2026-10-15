@@ -1,50 +1,50 @@
 # Snowstorm
 
-Uma página simples com efeito de neve, reprodução de áudio e sincronização de letras (lyrics) diretamente no front-end.
+A simple page with a snow effect, audio playback, and synchronized lyrics, all running directly in the front end.
 
-**Status:** Pronto — versão mínima funcional
+**Status:** In production
 
-**Sumário**
-- **Descrição:** Página estática que reproduz uma faixa de áudio, exibe letras sincronizadas e adiciona efeito visual de neve.
-- **Demo:** Abra [index.html](index.html) no seu navegador.
-- **Tecnologias:** HTML, CSS, JavaScript — scripts locais `snowstorm.js` e `rabbit-lyrics.js`.
+**Summary**
+- **Description:** A static page that plays an audio track, displays synchronized lyrics, and adds a falling snow visual effect.
+- **Demo:** Open [index.html](index.html) in your browser.
+- **Technologies:** HTML, CSS, JavaScript — local scripts `content/snowstorm.js` and `content/rabbit-lyrics.js`.
 
-**Recursos**
-- Efeito de neve com `snowstorm.js`.
-- Reprodutor de áudio com controles e reprodução automática (`snowstorm.opus`).
-- Sincronização de letras com Rabbit Lyrics (implementado em `rabbit-lyrics.js`).
-- Estilos para as letras em `rabbit-lyrics.css`.
-- Estilos gerais da página em `style.css`.
+**Features**
+- Snow effect powered by `content/snowstorm.js`.
+- Audio player with controls and autoplay (`content/snowstorm.opus`).
+- Lyrics synchronization with Rabbit Lyrics (implemented in `content/rabbit-lyrics.js`).
+- Lyrics styles in `content/rabbit-lyrics.css`.
+- General page styles in `content/style.css`.
 
-**Como executar**
-1. Clone ou baixe este repositório.
-2. Abra o arquivo [index.html](index.html) no navegador (Chrome, Firefox ou outro navegador moderno).
+**How to run**
+1. Clone or download this repository.
+2. Open [index.html](index.html) in your browser (Chrome, Firefox, or any other modern browser).
 
-**Uso**
-1. Ao abrir [index.html](index.html) a faixa em `content/snowstorm.opus` será carregada e iniciará (autoplay).
-2. Use o player (controles de `audio`) para pausar, ajustar volume ou avançar.
-3. As letras são exibidas e sincronizadas automaticamente conforme a posição do áudio.
-4. O efeito de neve é executado em segundo plano; desative-o removendo ou comentando a inclusão de `content/snowstorm.js` em [index.html](index.html).
+**Usage**
+1. When you open [index.html](index.html), the track in `content/snowstorm.opus` is loaded and starts playing automatically (autoplay).
+2. Use the player (the `audio` controls) to pause, adjust the volume, or skip ahead.
+3. The lyrics are displayed and synchronized automatically with the audio's current position.
+4. The snow effect runs in the background; to disable it, remove or comment out the `content/snowstorm.js` include in [index.html](index.html).
 
-Comportamento padrão:
-- O volume inicial é definido via script inline em [index.html](index.html) (valor padrão atual: 0.2). Para alterar, edite o bloco de script abaixo do elemento `audio`.
-- As letras estão embutidas no HTML dentro da div com classe `rabbit-lyrics` em [index.html](index.html).
+Default behavior:
+- The initial volume is set by an inline script in [index.html](index.html) (current default: 0.2). To change it, edit the script block below the `audio` element.
+- The lyrics are embedded in the HTML, inside the div with the `rabbit-lyrics` class in [index.html](index.html).
 
-**Estrutura do projeto**
-- [index.html](index.html) — página principal, inclui áudio, letras e scripts.
-- [content/rabbit-lyrics.css](content/rabbit-lyrics.css) — estilos para exibição das letras.
-- [content/rabbit-lyrics.js](content/rabbit-lyrics.js) — lógica de sincronização de letras (Rabbit Lyrics).
-- [content/snowstorm.js](content/snowstorm.js) — script do efeito de neve.
-- [content/snowstorm.opus](content/snowstorm.opus) — arquivo de áudio usado pela página.
-- [style.css](style.css) — estilos gerais da página.
+**Project structure**
+- [index.html](index.html) — main page; includes the audio, lyrics, and scripts.
+- [content/rabbit-lyrics.css](content/rabbit-lyrics.css) — styles for displaying the lyrics.
+- [content/rabbit-lyrics.js](content/rabbit-lyrics.js) — lyrics synchronization logic (Rabbit Lyrics).
+- [content/snowstorm.js](content/snowstorm.js) — snow effect script.
+- [content/snowstorm.opus](content/snowstorm.opus) — audio file used by the page.
+- [content/style.css](content/style.css) — general page styles.
 
-**Licença / Notas**
-- O `snowstorm.js` inclui cabeçalho indicando licença BSD.
-- O `rabbit-lyrics` menciona licença GPLv3 (veja comentários em `content/rabbit-lyrics.js`).
-- Verifique os cabeçalhos dos arquivos para detalhes de licença antes de redistribuir.
+**License / Notes**
+- `content/snowstorm.js` includes a header indicating a BSD license.
+- `rabbit-lyrics` mentions a GPLv3 license (see the comments in `content/rabbit-lyrics.js`).
+- Check the file headers for license details before redistributing.
 
-**Contribuindo**
-- Sugestões, correções e melhorias são bem-vindas. Abra uma issue descrevendo a proposta antes de enviar um pull request.
+**Contributing**
+- Suggestions, fixes, and improvements are welcome. Please open an issue describing your proposal before submitting a pull request.
 
-**Autor**
+**Author**
 - Denis Bittencourt — https://denisbm.com
